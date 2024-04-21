@@ -1,0 +1,23 @@
+header, footer {
+    height: 100px;
+    width: 100%;
+    margin: 10px;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.Article {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    height: 200px;
+    margin: 10px;
+    width: 50%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
