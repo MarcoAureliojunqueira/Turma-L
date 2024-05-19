@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação dos  Simpsons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+ function votacao(){
+
+    let digiteseuVoto = prompt('Digite seu voto suas opçoes Homer Simpsons,Margem Simpsons,Lisa Simpsons,Bart Simpsons ou nulo/branco');
+
+    let valor = digiteseuVoto;
+ 
+ switch (valor) {
+    case "Homer Simpsons":
+     console.log('Você votou no Homer Simpsons');
+ 
+     break;
+    case "Margem Simpsons":
+     console.log('Você votou na Margem Simpsons');
+    
+     break;
+    case "Lisa Simpsons":
+     console.log('Você votou na Lisa Simpsons');
+   
+     break;
+    case "Bart Simpsons":
+      console.log('Você votou no Bart Simpsons');
+     
+      break;
+
+    default: ''
+     console.log('Você digitou nulo');
+     break;
+ }
+ }
+    </script>
+
+       <input type="color">
+       <div class="inicio">
+        <div class="personagens">
+            <img class="Homer" src="homer.jpeg" alt="Homer Simpsons">
+            <img class="Margem" src="margem.jpeg" alt="Margem Simpsons">
+            <img class="Lisa"src="lisa.jpeg" alt="Lisa Simpsons">
+            <img class="Bart" src="bart.jpeg" alt="Bart Simpsons">
+        </div>
+
+
+        <H1 >Vote no melhor Simpsons </H1>
+    
+        <button  onclick="votacao()">Inicie a sua votação</button>
+        <p onclick="votacao()">`${votacao.result}`</p>
+       </div>
+          
+    
+     
+</body>
+</html>
