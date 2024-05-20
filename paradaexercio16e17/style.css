@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.Animais-Inteligentes {
+  background-color: blue;
+  color: white;
+}
+
+.Animais-Fofos {
+  background-color: green;
+  color: white;
+}
+
+.Animais-Perigosos {
+  background-color: red;
+  color: white;
+}
+
+.imagem {
+  width: 80%;
+}
+
+.conteudo {
+  flex: 1 1 300px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+aside {
+  flex: 0 0 250px;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 10px;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f0f0f0;
+  padding: 10px 10px;
+}
+
+.header a, .header button {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.header a:hover, .header button:hover {
+  background-color: #ddd;
+}
+
+.header-right {
+  float: right;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .header a, .header button {
+      display: block;
+      float: none;
+      text-align: left;
+  }
+
+  .header .header-right {
+      display: none;
+  }
+
+  .header #menuBurguer {
+      display: block;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
