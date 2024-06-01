@@ -1,5 +1,21 @@
 .Hortifrut {
-    width:5% ;
-    height:1% ;
+    width:10% ;
+    height:100% ;
 
+}
+.Header {
+background-color: black;
+}
+.Legumes {
+  color: green;
+}
+
+.Frutas{
+    color: red;
+}
+p {
+  color: white;
+}
+footer {
+  background-color: black;
 }
