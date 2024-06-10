@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnChange com seletores</title>
+</head>
+<body>
+    <h1>Exemplo onchange com 3 opções</h1>
+    <label for="meuSelect">Escolha uma opção:</label>
+    <select id="meuSelect" onchange="mostrarOpcao()">
+        <option value="Opção 1">Opção 1</option>
+        <option value="Opção 2">Opção 2</option>
+        <option value="Opção 3">Opção 3</option>
+    </select>
+    
+    <div id="resultado"></div>
+ 
+    <script>
+        function mostrarOpcao() {
+            const selectElement = document.getElementById("meuSelect");
+            const selectedValue = selectElement.value;
+            const displayDiv = document.getElementById("resultado");
+            
+            displayDiv.textContent = "Você selecionou: " + selectedValue;
+        }
+    </script>
+</body>
+</html>
+ 

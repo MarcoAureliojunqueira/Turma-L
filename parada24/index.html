@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Aninhadas</title>
+ 
+</head>
+<body>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <button onclick="exibirSaudacao()">Mostrar Saudação</button>
+    <p id="resultado"></p>
+ 
+    <script>
+        function saudacao(nome) {
+            function gerarMensagem() {
+                const mensagens = [
+                    "Olá",
+                    "Bem-vindo",
+                    "Saudações",
+                    "Oi",
+                    "Como vai"
+                ];
+ 
+                const mensagemAleatoria = mensagens[Math.floor(Math.random() * mensagens.length)];
+                return mensagemAleatoria;
+            }
+ 
+            return `${gerarMensagem()}, ${nome}!`;
+        }
+ 
+        function exibirSaudacao() {
+            const nome = document.getElementById('nome').value;
+            const saudacaoMensagem = saudacao(nome);
+            document.getElementById('resultado').innerText = saudacaoMensagem;
+        }
+    </script>
+</body>
+</html>
+ 
+ 
