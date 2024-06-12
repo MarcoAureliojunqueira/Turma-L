@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  height: 50%;
 }
 
 /* Header */
@@ -18,10 +19,10 @@ body {
 }
 
 main {
-  background-image: url("imagens/download.jpeg");
+  background-image: url("imagens/frutas_legumes_e_verduras_Oba_Hortifruti.png");
   background-size: cover;
   width: 100%;
-  height: 800px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,8 +30,9 @@ main {
 }
 
 h2 {
-  background-color: rgb(5, 48, 5);
+  background-color:  black;
   text-align: center;
+  display: flex;
   color: rgb(223, 231, 223);
 }
 .fraseMarketing {
@@ -56,27 +58,21 @@ h2 {
   text-decoration: underline;
 }
 
-.legumes {
-  color: green;
-}
-
-.frutas {
-  color: red;
-}
-
-/* Footer */
 footer {
   background-color: black;
   color: white;
   text-align: center;
   padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fundoInsta, .fundoGmail {
   width: 15%;
   background-color: white;
   text-align: center;
-  margin: 0 auto; /* Centering the divs */
+  margin: 10px; /* Centering the divs */
 }
 
 .instagram, .imagemGmail {
@@ -88,3 +84,5 @@ p {
   color: black;
   text-align: center;
 }
+
+
