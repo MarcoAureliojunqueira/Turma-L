@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário com Máscaras</title>
+    <style>
+      input {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <label for="Nome">Nome:</label>
+      <input
+        type="text"
+        id="Nome"
+        name="Nome"
+        placeholder="Digite seu nome"
+      /><br />
+
+      <label for="Sobrenome">Sobrenome:</label>
+      <input
+        type="text"
+        id="Sobrenome"
+        name="Sobrenome"
+        placeholder="digite seu sobrenome"
+      /><br />
+
+      <label for="Gmail">Gmail</label>
+      <input
+        type="text"
+        id="Gmail"
+        name="Gmail"
+        placeholder="Digite o email"
+      /><br />
+
+      <label for="telefone">Telefone:</label>
+      <input
+        type="text"
+        id="telefone"
+        name="telefone"
+        placeholder="(00) 00000-0000"
+      /><br />
+
+      <label for="CEP">CEP:</label>
+      <input
+        type="text"
+        id="CEP"
+        name="CEP"
+        placeholder="Digite seu CEP"
+      /><br />
+
+      <label for="Sobrenome">Bairro</label>
+      <input
+        type="text"
+        id="Bairro"
+        name="Bairro"
+        placeholder="digite seu Bairro"
+      /><br />
+
+      <label for="Gmail">Rua</label>
+      <input
+        type="text"
+        id="Rua"
+        name="rua"
+        placeholder="Digite o seu endereco"
+      /><br />
+
+      <label for="Cidade">Cidade</label>
+      <input
+        type="text"
+        id="Cidade"
+        name="Cidade"
+        placeholder="Digite o seu Cidade"
+      /><br />
+
+      <label for="Estado">Estado</label>
+      <input
+        type="text"
+        id="Estado"
+        name="Estado"
+        placeholder="Digite o seu Estado"
+      /><br />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+      function maskInput(event, mask) {
+        const input = event.target;
+        const value = input.value.replace(/\D/g, ""); // Remove tudo o que não é dígito
+        let maskedValue = "";
+        let index = 0;
+
+        for (let i = 0; i < mask.length; i++) {
+          if (mask[i] === "0") {
+            if (index < value.length) {
+              maskedValue += value[index];
+              index++;
+            } else {
+              break;
+            }
+          } else {
+            maskedValue += mask[i];
+          }
+        }
+
+        input.value = maskedValue;
+      }
+
+      function validateEmail(email) {
+        const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return re.test(String(email).toLowerCase());
+      }
+
+      function validateName(name) {
+        return name.trim() !== ""
+      }
+
+      window.onload = function () {
+        const telefoneInput = document.getElementById("telefone");
+        const form = document.getElementById("form");
+        const nomeInput = document.getElementById("Nome");
+        const emailInput = document.getElementById("Gmail");
+
+        telefoneInput.addEventListener("input", function (event) {
+          maskInput(event, "(00) 00000-0000");
+        });
+
+        form.addEventListener("submit", function (event) {
+          if (!validateName(nomeInput.value)) {
+            alert("Nome é obrigatório.");
+          }
+
+          if (!validateEmail(emailInput.value)) {
+            alert("Email inválido.");
+          }
+        });
+      };
+    </script>
+  </body>
+</html>
