@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="style.css" />
     <title>Hortifrut pagina inicial</title>
     <script>
-        // Função nao utilizada no momento 
 
-    //  function changeBackgroundColor() {
-    //   const colorPicker = document.getElementById("backgroundColor");
-    //    document.body.style.backgroundColor = colorPicker.value;
-    //  }
-    // tags não utilizadas no momento
-    //   <label for="backgroundColor">Escolha sua Cor de Fundo: </label>
-    //  <input type="color" id="backgroundColor" onchange="changeBackgroundColor()">
+      let Produtos = [""];
+        function adicionarProduto() {
+    const novoDesenho = document.getElementById('novo-Produto').value;
+    
+    if (novoDesenho !== '') {
+               Produtos.push(novoDesenho); // Adiciona o novo desenho ao array
+                document.getElementById('novo-Produto').value = ''; // Limpa o input
+            }
+}
     </script>
   </head>
   <body>
@@ -31,23 +32,29 @@
       </nav>
     </header>
     <main>
-      <h2>Bem-vindo ao Hortifrut</h2>
-      <h3 class="fraseMarketing">
-        Frase: Descubra a essência da natureza em cada fruto <br> no Hortifrut
-        FreshProduce
-      </h3>
-    
+
+      <div>
+      <h2>Bem-vindo a Hortifrut Familia</h2>
+      <input type="text" id="novo-desenho" placeholder="Encontre o seu produto">
+      <button onclick=" adicionarProduto()">Buscar</button>
+
+      </div>
+     
+      
     </main>
 
     <footer>
       <div class="fundoInsta">
         <img class="instagram" src="../imagens/instagram.jpeg" alt="instragram" />
-        <p>Hortifrut-fresh.com</p>
+        <p><a href="">Hortifrut-fresh.com</a> </p>
       </div>
+      
+      
       <div class="fundoGmail">
         <img class="imagemGmail" src="../imagens/gmail.png" alt="gmail" />
-        <p>hortifrut-fresh@gmail.com</p>
+        <p><a href="">hortifrut-fresh@gmail.com</a></p>
       </div>
+      
     </footer>
   </body>
 </html>

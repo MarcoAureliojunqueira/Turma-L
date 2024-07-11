@@ -79,10 +79,17 @@ footer {
   width: 30%;
   margin: 10px 0;
 }
-
+.Hortifrut-da-Familia {
+  height: 20%;
+  width: 30%;
+}
 p {
   color: black;
   text-align: center;
+}
+.div{
+  width: 20%;
+  margin: 5px 0;
 }
 
 

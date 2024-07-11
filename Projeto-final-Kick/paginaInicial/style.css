@@ -72,13 +72,15 @@ footer {
 }
 
 .fundoInsta, .fundoGmail {
-  width: 15%;
+width: 15%;
+object-fit: cover;
   background-color: white;
   text-align: center;
-  margin: 10px; 
+  margin: 10px 0;
 }
 
 .instagram, .imagemGmail {
+  height: 20%;
   width: 30%;
   margin: 10px 0;
 }
