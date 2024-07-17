@@ -15,6 +15,41 @@
     // tags não utilizadas no momento
     //   <label for="backgroundColor">Escolha sua Cor de Fundo: </label>
     //  <input type="color" id="backgroundColor" onchange="changeBackgroundColor()">
+
+             // Array inicial de desenhos animados dos anos 2000
+let minhaLista = [
+ 
+];
+
+let indiceSubstituicao = 0; // Índice para controlar a substituição
+
+// Função para exibir a lista de desenhos animados
+function exibirLista() {
+    const lista = document.getElementById('lista-Compras');
+    lista.innerHTML = ''; // Limpa a lista antes de preenchê-la novamente
+
+    minhaLista.forEach(produto => {
+        const item = document.createElement('li');
+        item.textContent = produto;
+        lista.appendChild(item);
+    });
+}
+
+// Função para adicionar um novo desenho
+function adicionarProduto() {
+    const novoProduto = document.getElementById('novo-produto').value;
+    
+    if (novoProduto !== '') {
+                minhaLista.push(novoProduto); // Adiciona o novo desenho ao array
+                exibirLista(); // Atualiza a exibição da lista
+                document.getElementById('novo-produto').value = ''; // Limpa o input
+            }
+}
+
+
+// Exibe a lista inicial quando a página carrega
+window.onload = exibirLista;
+      
     </script>
   </head>
   <body>
@@ -31,8 +66,14 @@
       </nav>
     </header>
     <main>
-      <h2>Minhas Compras</h2>
-    
+      <h2>Minha lista de Compras</h2>
+      <h1>Lista</h1>
+    <ul id="lista-Compras">
+        <!-- A lista será preenchida aqui pelo JavaScript -->
+    </ul>
+    <input type="text" id="novo-produto" placeholder="Digite seu Produto">
+    <button onclick="adicionarProduto()">Adicionar Produto</button>
+
     
     </main>
 
