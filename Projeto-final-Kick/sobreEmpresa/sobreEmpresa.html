@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hortifrut</title>
+    <script>
+      
+      function changeBackgroundColor() {
+       const colorPicker = document.getElementById("backgroundColor");
+        document.body.style.backgroundColor = colorPicker.value;
+      }
+   
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <img class="hortifrut" src="../imagens/hortifruti.png" alt="Hortifrut" />
+      </div>
+      <nav class="opcoes">
+        <a href="../paginaInicial/home.html">Página Inicial</a>
+        <a class="legumes" href="../projectLegumes/legumes.html">Legumes</a>
+        <a class="frutas" href="../projectFrutas/frutas.html">Frutas</a>
+        <a href="../minhasCompras/minhasCompras.html">Minhas Compras</a>
+        <a href="../sobreEmpresa/sobreEmpresa.html">Sobre a Empresa</a>
+      </nav>
+    </header>
+    <main>
+      <h2 id="Hortifrut-da-Familia">  Hortifrut da  Familia</h2>
+      <div id="div">
+        <p>Hortifrut da Família
+
+          Bem-vindo à Hortifrut da Família, onde a qualidade e a tradição se encontram para oferecer os melhores produtos frescos e saudáveis. Nossa missão é levar até a sua mesa frutas, legumes e verduras de alta qualidade, cultivados com amor e dedicação. <br><br>
+          Desde a nossa fundação, a Hortifrut da Família se dedica a seguir práticas agrícolas sustentáveis, respeitando o meio ambiente e valorizando o trabalho de pequenos produtores locais. Cada colheita é cuidadosamente selecionada para garantir que você receba apenas o melhor. <br><br>
+          Na Hortifrut da Família, acreditamos que a alimentação saudável é a base para uma vida plena e feliz. Por isso, trabalhamos diariamente para oferecer uma grande variedade de produtos frescos, ricos em nutrientes e saborosos, para todas as suas necessidades culinárias. <br><br>
+          Venha nos visitar e descubra o prazer de consumir produtos frescos e de alta qualidade. Nossa equipe está sempre pronta para ajudar você a escolher os melhores ingredientes para as suas receitas favoritas. Juntos, vamos cultivar saúde e bem-estar em cada refeição. <br><br>
+          Hortifrut da Família – Da nossa família para a sua.
+          
+          </p>
+    
+      </div>
+     
+
+
+
+      <label for="backgroundColor">Escolha sua Cor de Fundo para sua tela de fundo: </label>
+      <input type="color" id="backgroundColor" onchange="changeBackgroundColor()">
+    </main>
+
+    <footer>
+      <div class="fundoInsta">
+        <img class="instagram" src="../imagens/instagram.jpeg" alt="instragram" />
+        <p>Hortifrut-fresh.com</p>
+      </div>
+      <div class="fundoGmail">
+        <img class="imagemGmail" src="../imagens/gmail.png" alt="gmail" />
+        <p>hortifrut-fresh@gmail.com</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Cor de Fundo</title>
+    <script>
+        function alterarCorDeFundo() {
+            const cores = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink', 'cyan'];
+            const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+            document.body.style.backgroundColor = corAleatoria;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="alterarCorDeFundo()">Clique para mudar a cor de fundo</button>
+</body>
+</html>

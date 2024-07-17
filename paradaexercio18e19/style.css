@@ -1,0 +1,28 @@
+
+.inicio {
+  
+   text-align: center;
+   line-height: 100px;
+}
+
+.Homer {
+    height: 30%;
+    width: 15%;
+border: black;
+
+}
+
+.Lisa {
+    width: 10%;
+    border: black;
+    }
+
+.Bart{
+    width: 10%;
+    border: black;
+    }
+
+.Margem {
+    width: 10%;
+    border: black;
+    }

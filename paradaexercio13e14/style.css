@@ -1,0 +1,16 @@
+
+@media screen and ( max-width: 500px ){
+}    
+
+    .Coalas { max-width: 300px; }
+
+
+    .Lobos {
+         max-width: 300px; 
+    }
+    
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }

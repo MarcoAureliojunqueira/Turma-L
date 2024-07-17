@@ -1,0 +1,30 @@
+div {
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+img {
+    height: 200px;
+    width: 500px;
+    background-color: beige;
+}
+
+form {
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100%;
+    background-image: url(imagemfloresta2.jpg);
+}
+
+#test1 {
+    color: white;
+}

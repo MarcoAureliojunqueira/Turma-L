@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+ 
+.conteudo {
+    flex: 1 1 300px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+ 
+aside {
+    flex: 0 0 250px;
+    background-color: #ddd;
+    padding: 10px;
+}
+ 
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+}
+ 
+.header {
+    overflow: hidden;
+    background-color: #f0f0f0;
+    padding: 20px 10px;
+}
+ 
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header #menuBurguer {
+    display: none;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header #menuBurguer:hover{
+    background-color: #f0f0f0;
+    color: #333;
+}
+ 
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+ 
+.header a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+ 
+.header-right {
+    float: right;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+    .header a{
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .header .header-right {
+        display: none;
+    }
+
+    .header #menuBurguer {
+        display: block;
+    }
+}

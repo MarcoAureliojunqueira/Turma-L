@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bg">
+    <button onclick="trocaCor('blue')">Botão 1</button>
+    <button onclick="trocaCor('red')">Botão 2</button>
+    <button onclick="trocaCor('lime')">Botão 3</button>
+    
+    <script>
+        trocaCor("blue")
+ 
+        function trocaCor(cor) {
+            console.log(cor);
+            document.getElementById("bg").style = `background-color: ${cor}`
+        }
+ 
+    </script>
+</body>
+</html>

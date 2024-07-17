@@ -1,0 +1,17 @@
+
+img {
+    background-color: beige;
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+
+form {
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+  <style>
+     body, html {
+            height: 80%;
+            margin: 0;
+            display: grid;
+            place-items: center;
+        }
+   div {
+  text-align: center;
+column-width: auto;
+   }
+  </style>
+
+<div>
+    <h1>Digite o que pensa</h1>
+    <input  id="text" type="text"> 
+    <input type="submit" onclick="escreva()"> 
+ 
+    <h2 id="result"></h2>
+ 
+</div>
+   
+    <script>
+ 
+        function  escreva() {
+        const  valor = document.getElementById('text').value ;
+ 
+            document.getElementById("result").innerText = valor;
+        }
+ 
+    </script>
+</body>
+</html>
