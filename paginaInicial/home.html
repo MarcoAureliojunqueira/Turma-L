@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hortifrut pagina inicial</title>
+    <script>
+
+      let Produtos = [""];
+        function adicionarProduto() {
+    const novoDesenho = document.getElementById('novo-Produto').value;
+    
+    if (novoDesenho !== '') {
+               Produtos.push(novoDesenho); // Adiciona o novo desenho ao array
+                document.getElementById('novo-Produto').value = ''; // Limpa o input
+            }
+}
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <img class="hortifrut" src="../imagens/hortifruti.png" alt="Hortifrut" />
+      </div>
+      <nav class="opcoes">
+        <a href="../paginaInicial/home.html">Página Inicial</a>
+        <a class="legumes" href="../projectLegumes/legumes.html">Legumes</a>
+        <a class="frutas" href="../projectFrutas/frutas.html">Frutas</a>
+        <a href="../minhasCompras/minhasCompras.html">Minhas Compras</a>
+        <a href="../sobreEmpresa/sobreEmpresa.html">Sobre a Empresa</a>
+      </nav>
+    </header>
+    <main>
+
+      <div >
+      <h2>Bem-vindo a Hortifrut Familia</h2>
+      <input type="text" id="novo-desenho" placeholder="Encontre o seu produto">
+      <button onclick=" adicionarProduto()">Buscar</button>
+
+      </div>
+     
+      
+    </main>
+
+    <footer>
+      <div class="fundoInsta">
+        <img class="instagram" src="../imagens/instagram.jpeg" alt="instragram" />
+        <p><a href="">Hortifrut-fresh.com</a> </p>
+      </div>
+  s
+      
+      <div class="fundoGmail">
+        <img class="imagemGmail" src="../imagens/gmail.png" alt="gmail" />
+        <p><a href="">hortifrut-fresh@gmail.com</a></p>
+      </div>
+
+    </footer>
+  </body>
+</html>
