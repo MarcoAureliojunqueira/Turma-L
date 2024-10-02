@@ -75,7 +75,7 @@ plt.savefig("grafico_vagas_top_cursos.png")  # Salva o gráfico como imagem
 plt.close()  # Fecha a figura
 
 # Criar o PDF
-c = canvas.Canvas("relatorio_com_capa.pdf", pagesize=A4)
+c = canvas.Canvas("Projeto Python.pdf", pagesize=A4)
 width, height = A4
 
 # Página 1: Capa de Apresentação
