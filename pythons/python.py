@@ -1,7 +1,7 @@
 # exercio 1
 valor1 = int(input("Digite o Primeiro numero: "))
 valor2 = int(input("Digite o Segundo numero: "))
-
+  
 print("resultado do  exercicio 1 = ", valor1 + valor2)
 print()
 # exercio 2
